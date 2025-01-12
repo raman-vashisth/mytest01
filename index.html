@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Survey</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      background-image: url('myimg.jpg'); /* Replace with your chosen image URL */
-      background-size: cover;
-      background-position: center center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('myimg.jpg'); /* Replace with your chosen image URL */
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
 
-    .gif-container {
-      margin-bottom: 20px; /* Add some space below the GIF */
-      text-align: center;
-    }
+        .gif-container {
+            text-align: center;
+            margin-bottom: 20px; 
+        }
 
-    .container {
-      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-      padding: 40px;
-      border-radius: 10px;
-      text-align: center;
-    }
-  </style>
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="gif-container">
-    <iframe src="https://giphy.com/embed/3o7TKIi4TqVMBWaSB2" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/impastortv-tv-land-impastor-dark-comedy-3o7TKIi4TqVMBWaSB2">via GIPHY</a></p>
-  </div>
+    <div class="gif-container">
+        <iframe src="https://giphy.com/embed/3o7TKIi4TqVMBWaSB2" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/impastortv-tv-land-impastor-dark-comedy-3o7TKIi4TqVMBWaSB2">via GIPHY</a></p>
+    </div>
 
-  <div class="container">
-    <h1>Park smart, park stress-free</h1>
-    <p>Have you ever felt uncomfortable displaying your personal contact information on your vehicle? Would you prefer a discreet and secure way for others to reach you if needed?</p>
+    <div class="container">
+        <h1>Park smart, park stress-free</h1>
+        <p>Have you ever felt uncomfortable displaying your personal contact information on your vehicle? Would you prefer a discreet and secure way for others to reach you if needed?</p>
 
-    <button type="button" class="btn btn-primary btn-lg">Yes</button>
-    <button type="button" class="btn btn-secondary btn-lg">No</button>
+        <button type="button" class="btn btn-primary btn-lg">Yes</button>
+        <button type="button" class="btn btn-secondary btn-lg">No</button>
 
-    <p id="response" class="mt-3"></p>
-  </div>
+        <p id="response" class="mt-3"></p>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const yesButton = document.querySelector('.btn-primary');
-    const noButton = document.querySelector('.btn-secondary');
-    const responseDiv = document.getElementById('response');
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const yesButton = document.querySelector('.btn-primary');
+        const noButton = document.querySelector('.btn-secondary');
+        const responseDiv = document.getElementById('response');
 
-    yesButton.addEventListener('click', () => {
-      responseDiv.textContent = "Thanks for your response";
-    });
+        yesButton.addEventListener('click', () => {
+            responseDiv.textContent = "Thanks for your response";
+        });
 
-    noButton.addEventListener('click', () => {
-      responseDiv.textContent = "Protect your privacy !!! Don't share your number with Strangers !!!";
-    });
-  </script>
+        noButton.addEventListener('click', () => {
+            responseDiv.textContent = "Protect your privacy !!! Don't share your number with Strangers !!!";
+        });
+    </script>
 
 </body>
-</
+</html>
